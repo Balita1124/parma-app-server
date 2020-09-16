@@ -13,7 +13,7 @@ public class ProductDetails {
     private Integer id;
     private String name;
     private String code;
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
     private Date validity_date;
     private BigDecimal price;
 

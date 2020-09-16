@@ -8,6 +8,9 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
 @Slf4j
 public class ProductServiceImpl implements ProductService {
@@ -24,4 +27,17 @@ public class ProductServiceImpl implements ProductService {
         log.info("Saving product {}", product);
         return productRepository.save(product);
     }
+	@Override
+    public Product findProductById(int productId) {
+        Optional<Product> product = productRepository.findById(productId);
+        if (!product.isPresent()) {
+            //throw new ResourceNotFoundException("Product " + productId + " not found");
+			return null;
+        }
+        return product.get();
+    }
+	@Override
+	public List<Product> getAllProducts(){
+		return productRepository.findAll();
+	}
 }

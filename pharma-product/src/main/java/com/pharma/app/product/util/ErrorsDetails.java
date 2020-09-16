@@ -9,7 +9,9 @@ import org.springframework.validation.FieldError;
 
 import java.util.ArrayList;
 import java.util.List;
+import lombok.Data;
 
+@Data
 public class ErrorsDetails {
 
     private List<BindingError> bindingErrors = new ArrayList<BindingError>();

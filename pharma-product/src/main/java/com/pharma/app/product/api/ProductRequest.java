@@ -16,7 +16,7 @@ public class ProductRequest {
     @NotBlank(message = "Code can't blank")
     private String code;
     @NotNull
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private Date validity_date;
     @NotNull
     private BigDecimal price;
