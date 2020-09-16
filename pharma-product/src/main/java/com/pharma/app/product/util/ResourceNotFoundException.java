@@ -1,4 +1,4 @@
-package com.pharma.app.product.api;
+package com.pharma.app.product.util;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
