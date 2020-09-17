@@ -1,4 +1,4 @@
-package com.pharma.app.product.api;
+package com.pharma.app.product.playload;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
@@ -17,7 +17,7 @@ public class ProductRequest {
     private String code;
     @NotNull
     @JsonFormat(pattern = "dd-MM-yyyy")
-    private Date validity_date;
+    private Date validityDate;
     @NotNull
     private BigDecimal price;
 }

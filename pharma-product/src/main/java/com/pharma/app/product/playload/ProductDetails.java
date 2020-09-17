@@ -1,4 +1,4 @@
-package com.pharma.app.product.api;
+package com.pharma.app.product.playload;
 
 import com.pharma.app.product.model.Product;
 import lombok.Data;
@@ -21,7 +21,7 @@ public class ProductDetails {
         this.id = product.getId();
         this.name = product.getName();
         this.code = product.getCode();
-        this.validity_date = product.getValidity_date();
+        this.validity_date = product.getValidityDate();
         this.price = product.getPrice();
     }
 }
