@@ -1,0 +1,12 @@
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (1,'000001', 'DOLIPRANE','2010-09-07', 1000);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (2,'000002', 'EFFERALGAN','2010-09-07', 2000);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (3,'000003', 'DAFALGAN','2010-09-07', 1500);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (4,'000004', 'LEVOTHYROX','2010-09-07', 122);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (5,'000005', 'IMODIUM','2010-09-07', 22);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (6,'000006', 'IMODIUM2','2010-09-07', 33);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (7,'000007', 'SPASFON','2010-09-07', 44);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (8,'000008', 'ISIMIG','2010-09-07', 66);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (9,'000009', 'TAHOR','2010-09-07', 45);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (10,'000010', 'SPEDIFEN','2010-09-07', 66);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (11,'000011', 'ELUDRIL','2010-09-07', 44);
+INSERT INTO products( ID, code, name, validity_date, price)VALUES (12,'000012', 'ELUDRIL2','2010-09-07', 444);
