@@ -1,8 +1,3 @@
-pharma-admin-server/target/*
-pharma-product/target/*
-
-pharma-admin-server/pharma-admin-server.iml
-pharma-product/pharma-product.iml
 pharma-product-service/target/*
 
 pharma.iml

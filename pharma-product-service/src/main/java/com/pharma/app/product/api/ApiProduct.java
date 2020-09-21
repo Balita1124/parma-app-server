@@ -43,6 +43,7 @@ public class ApiProduct {
     }
 
     @GetMapping(value = "/products/{productId}", name = "Avoir un produit")
+
     public ApiResponse getProduct(@PathVariable(value = "productId") Integer productId) {
         Product currentProduct = productService.findProductById(productId);
         if (currentProduct == null) {
@@ -97,6 +98,7 @@ public class ApiProduct {
 
 
     @PutMapping(value = "/products/{productId}", name = "Modification d'un produit")
+
     public ApiResponse updateProduct(@PathVariable(value = "productId") Integer productId, @RequestBody @Valid ProductRequest productRequest, BindingResult bindingResult) {
         Product currentProduct = productService.findProductById(productId);
         if (currentProduct == null) {
