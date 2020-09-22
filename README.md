@@ -14,4 +14,10 @@ $ mvn spring-boot:run
 
 ## Frontend
 
- [pharma-app-client](https://github.com/Balita1124/pharma-app-client).
+[pharma-app-client](https://github.com/Balita1124/pharma-app-client).
+ 
+## Outil de documentation de l'api
+
+[swagger-ui](http://localhost:8989/swagger-ui.html)
+
+ 
