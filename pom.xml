@@ -19,7 +19,8 @@
 
     <modules>
         <module>pharma-product-service</module>
-    </modules>
+      <module>societex-product-service</module>
+  </modules>
     <properties>
         <java.version>1.8</java.version>
     </properties>
