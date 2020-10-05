@@ -26,4 +26,5 @@ public abstract class DateAudit implements Serializable {
     @LastModifiedDate
     @Column(nullable = false , columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private Instant updatedAt;
+
 }

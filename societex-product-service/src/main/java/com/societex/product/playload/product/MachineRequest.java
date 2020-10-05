@@ -9,24 +9,34 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
-public class ProductRequest {
+public class MachineRequest {
     @NotBlank(message = "Nom est obligatoire")
     private String name;
 
     @NotBlank(message = "Code est obligatoire")
     private String code;
 
-//    @NotNull(message = "Date validité est obligatoire")
+    @NotNull(message = "Le prix de vente est obligatoire")
+    private BigDecimal priceUnit;
+
+    @NotNull
+    private BigDecimal pricePurchaseAverage;
+
+    @NotBlank
+    private String productType;
+
     @JsonFormat(pattern = "dd-MM-yyyy")
+    @NotNull
     private Date validityDate;
 
-    @NotNull(message = "Le prix de vente est obligatoire")
-    private BigDecimal price;
+    private Double width;
 
-//    public ProductRequest(String name,String code, Date validityDate, BigDecimal price) {
-//        this.name = name;
-//        this.code = code;
-//        this.validityDate = validityDate;
-//        this.price = price;
-//    }
+    private Double weight;
+
+    private Double length;
+
+    private Double watt;
+
+    public MachineRequest() {
+    }
 }
