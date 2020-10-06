@@ -9,10 +9,10 @@ import javax.validation.constraints.NotBlank;
 @Data
 public class StockRequest {
     @NotBlank(message = "Le depot est obligatoire")
-    private Depot depot;
+    private Integer depotId;
 
     @NotBlank(message = "L'article est obligatoire")
-    private Machine machine;
+    private Integer machineId;
 
     @NotBlank(message = "La quantité est obligqtoire")
     private Double quantite;

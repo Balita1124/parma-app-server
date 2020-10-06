@@ -1,7 +1,11 @@
 package com.societex.product.service;
 
+import com.societex.product.model.Depot;
+import com.societex.product.model.Machine;
 import com.societex.product.model.Stock;
 import com.societex.product.playload.product.StockRequest;
+import com.societex.product.repository.DepotRepository;
+import com.societex.product.repository.MachineRepository;
 import com.societex.product.repository.StockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -18,6 +22,12 @@ public class StockService {
 
     @Autowired
     private StockRepository stockRepository;
+
+    @Autowired
+    private DepotRepository depotRepository;
+
+    @Autowired
+    private MachineRepository machineRepository;
 
     public List<Stock> getAll() {
         List<Stock> stockList = new ArrayList<>();
@@ -52,8 +62,10 @@ public class StockService {
     }
 
     public Stock setStock(Stock stock, StockRequest stockRequest) {
-        stock.setDepot(stockRequest.getDepot());
-        stock.setMachine(stockRequest.getMachine());
+        Depot depot = depotRepository.findById(stockRequest.getDepotId()).orElse(null);
+        Machine machine = machineRepository.findById(stockRequest.getMachineId()).orElse(null);
+        stock.setDepot(depot);
+        stock.setMachine(machine);
         stock.setQuantite(stockRequest.getQuantite());
         stock.setMini(stockRequest.getMini());
         stock.setMax(stockRequest.getMax());
